@@ -20,26 +20,31 @@
     <ContentPage.Content>
         <Grid RowDefinitions="2*, *, *, *, *, *, *"
               ColumnDefinitions="*, *, *, *">
-            <Label x:Name="visor" Background="Aqua"
+            <Label x:Name="visor" Background="#333"
+                   TextColor="#FFF" FontSize="60"
+                   HorizontalTextAlignment="End"
+                   VerticalTextAlignment="End"
                    Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" />
+            
+            
             <Button Grid.Row="1" Grid.Column="0" Text="C" />
             <Button Grid.Row="1" Grid.Column="1" Text="+/-" />
             <Button Grid.Row="1" Grid.Column="2" Text="%" />
             <Button Grid.Row="1" Grid.Column="3" Text="Div" Style="{StaticResource botaoOperacoes}" />
 
-            <Button Grid.Row="2" Grid.Column="0" Text="7" />
-            <Button Grid.Row="2" Grid.Column="1" Text="8" />
-            <Button Grid.Row="2" Grid.Column="2" Text="9" />
+            <Button Grid.Row="2" Grid.Column="0" Text="7" Clicked="Button_Clicked_7" />
+            <Button Grid.Row="2" Grid.Column="1" Text="8" Clicked="Button_Clicked_8" />
+            <Button Grid.Row="2" Grid.Column="2" Text="9" Clicked="Button_Clicked_9" />
             <Button Grid.Row="2" Grid.Column="3" Text="X" />
 
-            <Button Grid.Row="3" Grid.Column="0" Text="4" />
-            <Button Grid.Row="3" Grid.Column="1" Text="5" />
-            <Button Grid.Row="3" Grid.Column="2" Text="6" />
-            <Button Grid.Row="3" Grid.Column="3" Text="-" />
+            <Button Grid.Row="3" Grid.Column="0" Text="4" Clicked="Button_Clicked_4" />
+            <Button Grid.Row="3" Grid.Column="1" Text="5" Clicked="Button_Clicked_5" />
+            <Button Grid.Row="3" Grid.Column="2" Text="6" Clicked="Button_Clicked_6" />
+            <Button Grid.Row="3" Grid.Column="3" Text="-"  />
 
-            <Button Grid.Row="4" Grid.Column="0" Text="1" />
-            <Button Grid.Row="4" Grid.Column="1" Text="2" />
-            <Button Grid.Row="4" Grid.Column="2" Text="3" />
+            <Button Grid.Row="4" Grid.Column="0" Text="1" Clicked="Button_Clicked_1" />
+            <Button Grid.Row="4" Grid.Column="1" Text="2" Clicked="Button_Clicked_2" />
+            <Button Grid.Row="4" Grid.Column="2" Text="3" Clicked="Button_Clicked_3" />
             <Button Grid.Row="4" Grid.Column="3" Text="+" />
 
             <Button Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" Text="0" />
