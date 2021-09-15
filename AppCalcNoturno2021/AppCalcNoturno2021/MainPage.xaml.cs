@@ -61,5 +61,55 @@ namespace AppCalcNoturno2021
             visor.Text += "2";
 
         }
+
+        private void Button_Clicked_Multiplicacao(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Subtracao(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Adicao(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Ponto(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Igual(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_0(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Zerar(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Inversor(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Porcentagem(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_Div(object sender, EventArgs e)
+        {
+
+        }
     }
 }
