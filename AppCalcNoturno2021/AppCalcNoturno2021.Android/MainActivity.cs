@@ -17,6 +17,12 @@ namespace AppCalcNoturno2021.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+            
+            // Como trocar a cor da Barra de Status do Android:
+            Window.ClearFlags(Android.Views.WindowManagerFlags.TranslucentStatus);
+            Window.AddFlags(Android.Views.WindowManagerFlags.DrawsSystemBarBackgrounds);
+            Window.SetStatusBarColor(Android.Graphics.Color.ParseColor("#333333"));
+
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
